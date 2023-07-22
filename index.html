@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Your Name</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Navbar */
+.navbar {
+    padding: 1rem 0;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3e%3cpath stroke="%23000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e');
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #666;
+}
+
+/* Section links */
+section {
+    padding: 5rem 0;
+}
+
+section h2 {
+    margin-bottom: 3rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+li:before {
+    content: '\2022';
+    margin-right: 0.5rem;
+    color: #17a2b8;
+}
+
+.certificate {
+    cursor: pointer;
+}
+
+.certificate:hover img {
+    opacity: 0.8;
+}
+
+.modal-dialog {
+    max-width: 90%;
+}
+
+.modal-content {
+    border: none;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.modal-footer {
+    border-top: 1px solid #ddd;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.card-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #17a2b8;
+}
+
+.card-link:hover {
+    color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Your Name</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-me">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbies">Hobbies &amp; Interests</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about-me">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>About Me</h2>
+                        <p>Write a brief introduction about yourself, your interests, and career goals.</p>
+                        <p>Contact me at <a href="mailto:youremail@example.com">youremail@example.com</a>.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="showri-college photo.jfif" alt="Your Profile Picture" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education">
+            <div class="container">
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Technology in Computer Science and Engineering, XYZ University</li>
+                    <li>GPA: 3.8/4.0</li>
+                    <li>Relevant coursework: Algorithms and Data Structures, Object-Oriented Programming, Database Systems, Web Development</li>
+                    <li>Academic achievements: Dean's List (2019, 2020)</li>
+                    <li>
+                        <h4>Certificates and Videos</h4>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <a href="#" class="certificate" data-toggle="modal" data-target="#certificate-modal-1">
+                                    <img src="certificate-thumbnail-1.jpg" alt="Certificate 1" class="img-fluid">
+                                </a>
+                                <div class="modal fade" id="certificate-modal-1" tabindex="-1" role="
+                            </div>
+                        </div>
+                    </section>
+                    <section id="projects">
+                        <div class="container">
+                            <h2>Projects</h2>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="project-thumbnail-1.jpg" alt="Project 1" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 1</h5>
+                                            <p class="card-text">A brief description of the project.</p>
+                                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project-modal-1">Learn More</a>
+                                            <div class="modal fade" id="project-modal-1" tabindex="-1" role="dialog" aria-labelledby="project-modal-1-label" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="project-modal-1-label">Project 1</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>A detailed description of the project.</p>
+                                                            <p>Technologies used: technology 1, technology 2, technology 3</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="project-thumbnail-2.jpg" alt="Project 2" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Project 2</h5>
+                                            <p class="card-text">A brief description of the project.</p>
+                                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#project-modal-2">Learn More</a>
+                                            <div class="modal fade" id="project-modal-2" tabindex="-1" role="dialog" aria-labelledby="project-modal-2-label" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="project-modal-2-label">Project 2</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p>A detailed description of the project.</p>
+                                                            <p>Technologies used: technology 1, technology 2, technology 3</p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <img src="project-thumbnail-3.jpg" alt="Project 3
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="skills">
+                    <div class="container">
+                        <h2>Skills</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Technical Skills</h4>
+                                <ul>
+                                    <li>Programming languages: Java, Python, JavaScript</li>
+                                    <li>Web development: HTML, CSS, Bootstrap, jQuery</li>
+                                    <li>Database: SQL, MongoDB</li>
+                                    <li>Tools: Git, Eclipse, Visual Studio Code, Jupyter Notebook</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Soft Skills</h4>
+                                <ul>
+                                    <li>Teamwork</li>
+                                    <li>Communication</li>
+                                    <li>Leadership</li>
+                                    <li>Problem solving</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="hobbies">
+                    <div class="container">
+                        <h2>Hobbies &amp; Interests</h2>
+                        <p>Write about your hobbies and interests, and how they relate to your personal and professional development.</p>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div class="container">
+                    <p>&copy; 2023 Your Name. All rights reserved.</p>
+                </div>
+            </footer>
+            <script>
+                $(document).ready(function() {
+                    // Smooth scroll to section links
+                    $('a[href^="#"]').on('click', function(event) {
+                        var target = $(this.getAttribute('href'));
+                        if( target.length ) {
+                            event.preventDefault();
+                            $('html, body').stop().animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                        }
+                    });
+                
+                    // Toggle navbar on mobile devices
+                    $('.navbar-toggler').on('click', function() {
+                        $('.navbar-collapse').toggleClass('show');
+                    });
+                
+                    // Close navbar on click
+                    $('.nav-link').on('click', function() {
+                        $('.navbar-collapse').removeClass('show');
+                    });
+                });
+                
+            </script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        </body>
+        </html>
+        
