@@ -152,6 +152,14 @@ body {
     font-size: 16px;
     line-height: 1.5;
   }
+
+  h2 {
+    color: #333;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    /*border-bottom:2px #bdb7b7 solid;*/
+  }
   
   /* Header */
   header {
@@ -191,13 +199,7 @@ body {
     padding: 60px 0;
   }
   
-  #about-me h2 {
-    color: #333;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    /*border-bottom:2px #bdb7b7 solid;*/
-  }
+ 
   
   #about-me p {
     color: #555;
@@ -250,12 +252,7 @@ body {
     padding: 60px 0;
   }
   
-  #education h2 {
-    color: #333;
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 30px;
-  }
+
   
   #education li {
     color: #555;
@@ -331,7 +328,29 @@ body {
     margin-left:5px;
 
   }
+
+   /* Add smooth scroll to anchor links */
+   a[href^="#"] {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
   
+  a[href^="#"]:hover {
+    color: #2c3e50;
+    text-decoration: none;
+  }
+  
+  /* Style for active menu link */
+  .active {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  footer p{
+      background-color: #fff;
+      text-align: center;
+      padding:5px;
+  }
     </style>
 </head>
 <body>
@@ -447,7 +466,7 @@ body {
                         <div class="card">
                             <img src="summary.jpeg" class="card-img-top" alt="Project 1">
                             <div class="card-body">
-                                <h5 class="card-title">name </h5>
+                                <h5 class="card-title">Multi-Party Authentication System</h5>
                                 <p class="card-text">Developed a fast and secure user-friendly authentication system for multi-owner data on a shared environment</p>
                                 <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
                               </div>
@@ -664,7 +683,7 @@ body {
             </div>
         </section> -->
         <!-- extracurriculum -->
-        <section id="extracurriculum ">
+        <section id="extracurriculum">
             <div class="container">
                 <h2>Curriculum & Extra Curriculum activies</h2>
                 <div class="row">
@@ -741,16 +760,15 @@ body {
             <div class="container">
                 <h2>Personal Information</h2>
                 <ul>
-                  <li>Father’s Name	:	KANTA BALASWAMY</li>
-                    <li>Mother’s Name	:	KANTA ANNAMMA</li>
-                    <li>Date of Birth	:	21/04/2003</li>
-                    <li>Gender	:	Male</li>
-                    <li>Nationality	:	Indian</li>
-                    <li>Languages Known		:	Telugu, English</li>
-                    <li>Hobbies			:	Playing Volleyball, coding</li>
-                    <li> Strength			:	Friendly nature and Excellent team leading skills,Self-learner and Eager to learn new things</li>
-                    <li>Communication Address	:	14-78, Yarrabalem Center, Mutluru(v) </li>
-                    <li>Vatticherukuru(m), Guntur, Andhrapradesh-522212</li>
+                  <li><strong>Father’s Name	:</strong>	KANTA BALASWAMY</li>
+                    <li><strong>Mother’s Name	:</strong>	KANTA ANNAMMA</li>
+                    <li><strong>Date of Birth	:</strong>	21/04/2003</li>
+                    <li><strong>Gender	:</strong>	Male</li>
+                    <li><strong>Nationality	:</strong>	Indian</li>
+                    <li><strong>Languages Known		:</strong>	Telugu, English</li>
+                    <li><strong>Hobbies			:</strong>	Playing Volleyball, coding</li>
+                    <li><strong>Strength			:</strong>	Friendly nature and Excellent team leading skills,Self-learner and Eager to learn new things</li>
+                    <li><strong>Communication Address	:</strong>	14-78, Yarrabalem Center, Mutluru(v) ,Vatticherukuru(m), Guntur, Andhrapradesh-522212</li>
                 </ul>
             </div>
         </section>
@@ -765,7 +783,7 @@ body {
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     
 
-    <<script>
+    <script>
         // Add animation to social icons on hover
         const socialIcons = document.querySelectorAll('.social-icons a img');
         socialIcons.forEach(icon => {
