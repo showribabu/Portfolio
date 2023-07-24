@@ -157,12 +157,13 @@ body {
   header {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
-    padding: 20px 0;
+    padding:5px 0;
   }
   
   .navbar-brand {
     font-size: 28px;
     font-weight: bold;
+    margin-left:400px;
   }
   
   .nav-link {
@@ -170,10 +171,15 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin-left: 20px;
+    padding:3px;
   }
   
   .nav-link:hover {
     color: #007bff;
+    font-size:20px;
+    transition:0.3s;
+
+    
   }
   
   /*
@@ -187,9 +193,6 @@ body {
     font-size: 24px;
   }*/
   
-
-
-  
   .social-icons a {
     font-size: 24px;
     color: #333;
@@ -198,9 +201,33 @@ body {
   .social-icons a:hover {
     color: #007bff;
   }
+   
+  /* Add hover animation to social icons */
+  .social-icons a:hover {
+    animation: pulse 0.5s ease-in-out;
+  }
+  .social-icons a img{
+    width:80px;
+    height:60px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+
   /* About Me section */
   #about-me {
-    background-color: #f8f9fa;
+    background-color: #faf9f8;
     padding: 60px 0;
   }
   
@@ -209,6 +236,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 30px;
+    /*border-bottom:2px #bdb7b7 solid;*/
   }
   
   #about-me p {
@@ -294,6 +322,15 @@ body {
     background-color: #0069d9;
     border-color: #0062cc;
   }
+
+
+  .profile{
+    position:absolute;
+    margin-top:2px;
+    top:0%;
+    margin-left:5px;
+
+  }
   
     </style>
 </head>
@@ -301,15 +338,15 @@ body {
   <!-- Header and Navigation bar -->
     <header>
         <div class="container">
+          <a class="navbar-brand" href="#">KANTA SHOWRIBABU </a>
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="#">KANTA SHOWRIBABU </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about-me">About Me</a>
+                            <a class="nav-link" href="#about-me">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#education">Education</a>
@@ -349,28 +386,24 @@ body {
     </header>
 
 
+    <div class="profile">
+      <img src="showri-college photo.jfif" alt="Your Profile Picture" class="img-fluid"  width="87px">
+    </div>
 
     <main>
         <!-- about -->
         <section id="about-me">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
                         <h2>About Me</h2>
-                        <p>Hi, I'm KANTA SHOWRIBABU, a B.Tech student majoring in COMPUTER SCIENCE AND ENGINEERING  at KKR & KSR Institute of Technology and Sciences, Vinjanampadu. I'm passionate about building logics and webdevelopment , and my career goal is to secure a responsible career opportunity in a reputed organization.</p>
-                        <p>You can contact me at <a href="mailto:youremail@example.com">kantashowribabu@gmail.com</a>.</p>
+                        <p>I am a highly motivated and dedicated computer science student with a strong foundation in programming languages, pursuing a B.Tech degree in CSE from KKR & KSR Institute of Technology and Sciences, My passion for technology and eagerness to learn has enabled me to consistently achieve academic excellence and lead successful projects. With Exceptional communication skills and experience in team leadership, I am confident in my ability to excel in any professional environment</p>
+                        <p>You can contact me at : <a href="mailto:kantashowribabu@gmail.com">kantashowribabu@gmail.com</a></p>
                         <div class="social-icons">
                           <!-- <i class="fab fa-linkedin-in"></i> -->
-                            <a href="https://www.linkedin.com/in/kanta-showribabu-b7262b20a"><img src="9th- Apriciation certificate_page-0001.jpg" alt=""></a>
-                            <a href="https://github.com/showribabu"><i class="fab fa-github"></i></a>
-                            <a href="https://www.techgig.com/kantashowribabu"><i class="fas fa-laptop-code"></i></a>
-                            <a href="https://www.hackerrank.com/kantashowribabu"><i class="fab fa-hackerrank"></i></a>
+                            <a href="https://www.linkedin.com/in/kanta-showribabu-b7262b20a" target="_blank"><img src="Linkedin.png" alt="Linkedin"></a>
+                            <a href="https://github.com/showribabu" target="_blank"><img src="github.png" alt="github"></a>
+                            <a href="https://www.techgig.com/kantashowribabu" target="_blank"><img src="techgig.png" alt="techgig"></a>
+                            <a href="https://www.hackerrank.com/kantashowribabu" target="_blank"><img src="HackerRank.png" alt="hackerrank"></a>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="showri-college photo.jfif" alt="Your Profile Picture" class="img-fluid">
-                    </div>
-                </div>
             </div>
         </section>
 
