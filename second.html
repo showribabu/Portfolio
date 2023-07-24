@@ -182,46 +182,6 @@ body {
     
   }
   
-  /*
-  .social-icons a {
-    display: inline-block;
-    margin-right: 10px;
-  }
-  
-  .social-icons i {
-    color: #007bff;
-    font-size: 24px;
-  }*/
-  
-  .social-icons a {
-    font-size: 24px;
-    color: #333;
-    margin-right: 20px;
-  }
-  .social-icons a:hover {
-    color: #007bff;
-  }
-   
-  /* Add hover animation to social icons */
-  .social-icons a:hover {
-    animation: pulse 0.5s ease-in-out;
-  }
-  .social-icons a img{
-    width:80px;
-    height:60px;
-  }
-  
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
 
 
 
@@ -253,6 +213,36 @@ body {
   #about-me a:hover {
     text-decoration: none;
   }
+
+
+/* Add hover animation to social icons */
+
+  .social-icons a img{
+    font-size: 24px;
+    color: #333;
+    margin-right: 30px;
+    width:80px;
+    height:60px;
+    
+  }
+   
+  .social-icons a img:hover {
+    animation: pulse 0.5s ease-in-out;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
   
   /* Education section */
   #education {
@@ -299,7 +289,16 @@ body {
     height: 200px;
     object-fit: cover;
   }
-  
+  .card-img-down
+  {
+    height: 200px;
+    object-fit:fill;
+  }
+  .card-img-down:hover{
+    transform:scale(1.1);
+    overflow:hidden;
+  }
+
   .card-title {
     font-size: 24px;
     font-weight: bold;
@@ -307,12 +306,13 @@ body {
   }
   
   .card-text {
-    color: #555;
-    font-size: 18px;
+
+    font-size: 16px;
     line-height: 1.8;
     margin-bottom: 10px;
   }
-  
+/* project details...button..*/
+  /* 
   .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
@@ -322,7 +322,7 @@ body {
     background-color: #0069d9;
     border-color: #0062cc;
   }
-
+*/
 
   .profile{
     position:absolute;
@@ -352,10 +352,10 @@ body {
                             <a class="nav-link" href="#education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
+                          <a class="nav-link" href="#skills">Skills</a>
+                      </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
+                            <a class="nav-link" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#certificates">Certifications</a>
@@ -364,7 +364,7 @@ body {
                             <a class="nav-link" href="#internship">Internships</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#participation">participation</a>
+                            <a class="nav-link" href="#participation">Bootcamps</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#strength">strength</a>
@@ -374,7 +374,7 @@ body {
                         </li> -->
                         
                         <li class="nav-item">
-                            <a class="nav-link" href="#extracurriculum ">extracurriculum </a>
+                            <a class="nav-link" href="#extracurriculum ">co&extracurriculum </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
@@ -401,7 +401,7 @@ body {
                           <!-- <i class="fab fa-linkedin-in"></i> -->
                             <a href="https://www.linkedin.com/in/kanta-showribabu-b7262b20a" target="_blank"><img src="Linkedin.png" alt="Linkedin"></a>
                             <a href="https://github.com/showribabu" target="_blank"><img src="github.png" alt="github"></a>
-                            <a href="https://www.techgig.com/kantashowribabu" target="_blank"><img src="techgig.png" alt="techgig"></a>
+                            <a href="https://www.techgig.com/pub/kantashowribabu" target="_blank"><img src="techgig.png" alt="techgig"></a>
                             <a href="https://www.hackerrank.com/kantashowribabu" target="_blank"><img src="HackerRank.png" alt="hackerrank"></a>
                         </div>
             </div>
@@ -412,13 +412,11 @@ body {
             <div class="container">
                 <h2>Education</h2>
                 <ul>
-                    <li><strong>Bachelor of Technology in COMPUTER SCIENCE AND ENGINEERING ,KKR & KSR Institute of Technology and Sciences, Vinjanampadu ,Academic year : 2020-2024</strong></li>
-                    <li>GPA:9.39</li>
-                    <br>
-                    <li><strong>Board of Intermediate Education(Andhra Pradesh) in Sri Chaitanya Junior College, Guntur during acamedic year : 2018 -2020</strong></li>
-                    <li>GPA: 9.86</li>
-                    <li><strong>Board of SecondarySchool Education(Andhra Pradesh) in St Xavier’s High School, Mutluru , year : 2018</strong></li>
-                    <li>GPA:9.7</li>
+                    <!-- <li><strong>Bachelor of Technology in COMPUTER SCIENCE AND ENGINEERING ,KKR & KSR Institute of Technology and Sciences, Vinjanampadu ,Academic year : 2020-2024</strong></li>
+                    <li>GPA:9.39</li> -->
+                    <li><strong>Bachelor of Technology (B.Tech) in the stream of Computer Science and Engineering at KKR&KSR Institute of Technology and Sciences, Graduating in 2024 </strong> CGPA: 9.4</li>
+                    <li><strong>Board of Intermediate Education(Andhra Pradesh) in Sri Chaitanya Junior College, Guntur, during acamedic year:2018 -2020</strong> GPA: 9.86</li>
+                    <li><strong>Board of Secondary School Education(Andhra Pradesh) in St Xavier’s High School, Mutluru, completed in 2018 </strong> GPA:9.7</li>
                 </ul>
             </div>
         </section>
@@ -428,7 +426,15 @@ body {
         <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <p>List your technical and non-technical skills here, using bullet points or other formatting as necessary.</p>
+                <ul>
+                  <li><strong>Programming languages :</strong> C, JAVA, Python, DSA, PHP</li>
+                  <li><strong>Web development :</strong> HTML, CSS, Javascript</li>
+                  <li><strong>Databases :</strong> SQL, MongoDB</li>
+                  <li><strong>Cloud Computing :</strong> Google</li>
+                  <li><strong>Tools :</strong> TurboC, VSCode, Github</li>
+                  <li><strong>Presentation tools :</strong> PPT, MS Word</li>
+                  <li><strong>Other subjects :</strong> CNS, CC, IoT, AI, DAA, CD, OS, CN, WT, SE, DBMS</li>
+                </ul>
             </div>
         </section>
 
@@ -439,76 +445,44 @@ body {
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="project-1.jpg" class="card-img-top" alt="Project 1">
+                            <img src="summary.jpeg" class="card-img-top" alt="Project 1">
                             <div class="card-body">
-                                <h5 class="card-title">Project 1</h5>
-                                <p class="card-text">Write a brief description of your project and mention the technologies used.</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <h5 class="card-title">name </h5>
+                                <p class="card-text">Developed a fast and secure user-friendly authentication system for multi-owner data on a shared environment</p>
+                                <!-- <a href="#" class="btn btn-primary">Learn More</a> -->
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="vooleyballnet.jpg" class="card-img-top" alt="Smartnet">
+                            <div class="card-body">
+                                <h5 class="card-title">SmartNet</h5>
+                                <p class="card-text">IoT-based Smart System for avoiding rules violations</p>
+                                <a href="Smart Net-project.pdf" class="btn btn-primary" target="_blank">Learn More</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="project-2.jpg" class="card-img-top" alt="Project 2">
+                            <img src="volleyballguns.png" class="card-img-top" alt="volleyballguns">
                             <div class="card-body">
-                                <h5 class="card-title">Project 2</h5>
-                                <p class="card-text">Write a brief description of your project and mention the technologies used.</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="project-3.jpg" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Project 3</h5>
-                                <p class="card-text">Write a brief description of your project and mention the technologies used.</p>
-                                <a href="#" class="btn btn-primary">Learn More</a>
+                                <h5 class="card-title">Volleyball Teammates</h5>
+                                <p class="card-text">a website for volleyball teammates that contain their images and details</p>
+                                <a href="https://showribabu.github.io/volleyball/" class="btn btn-primary" target="_blank">Visit</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                       <div class="card">
-                          <img src="project-3.jpg" class="card-img-top" alt="Project 3">
+                          <img src="guestbook_main.jpg" class="card-img-top" alt="Guestbook">
                           <div class="card-body">
-                              <h5 class="card-title">Project 3</h5>
-                              <p class="card-text">Write a brief description of your project and mention the technologies used.</p>
-                              <a href="#" class="btn btn-primary">Learn More</a>
+                              <h5 class="card-title">Guestbook</h5>
+                              <p class="card-text">GUI-based guest book for feedback collection</p>
+                              <a href="Guestbook.pdf" class="btn btn-primary" target="_blank">Learn More</a>
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-4">
-                    <div class="card">
-                        <img src="project-3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Write a brief description of your project and mention the technologies used.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-
-                  <div class="col-md-4">
-                    <div class="card">
-                        <img src="project-3.jpg" class="card-img-top" alt="Project 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 3</h5>
-                            <p class="card-text">Write a brief description of your project and mention the technologies used.</p>
-                            <a href="#" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                      <img src="project-3.jpg" class="card-img-top" alt="Project 3">
-                      <div class="card-body">
-                          <h5 class="card-title">Project 3</h5>
-                          <p class="card-text">Write a brief description of your project and mention the technologies used.</p>
-                          <a href="#" class="btn btn-primary">Learn More</a>
-                      </div>
-                  </div>
-              </div>
-
                 </div>
             </div>
         </section>
@@ -517,23 +491,168 @@ body {
         <section id="certificates">
             <div class="container">
                 <h2>Certificates</h2>
-                <p>List your technical and non-technical certificates.</p>
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="Nptel-java.jpg" class="card-img-down" alt="Programming in Java">
+                          <div class="card-body">
+                              <p class="card-text">Programming in Java</p>
+                              <a href="Nptel-java.jpg" class="btn btn-primary" target="_blank">View</a>
+                            </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                        <img src="Nptel_Blockchain.jpg" class="card-img-down" alt="Blockchain">
+                        <div class="card-body">
+                            <p class="card-text">Blockchain & It's Applications</p>
+                            <a href="Nptel_Blockchain.jpg" class="btn btn-primary" target="_blank">View</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                      <img src="Hacker rank_python.jpg" class="card-img-down" alt="python_hackerrank">
+                      <div class="card-body">
+                          <p class="card-text">Pthon Basics skill test</p>
+                          <a href="Hacker rank_python.jpg" class="btn btn-primary" target="_blank">View</a>
+                        </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="Hacker rank_java.jpg" class="card-img-down" alt="java_hackerrank">
+                    <div class="card-body">
+                        <p class="card-text">Java Basics skill test</p>
+                        <a href="Hacker rank_java.jpg" class="btn btn-primary" target="_blank">View</a>
+                      </div>
+                </div>
             </div>
-        </section>
+            <div class="col-md-4">
+              <div class="card">
+                  <img src="Cisco-python-certificate.jpg" class="card-img-down" alt="Cisco-python-certificate">
+                  <div class="card-body">
+                      <p class="card-text">python-certification from cisco</p>
+                      <a href="Cisco-python-certificate.jpg" class="btn btn-primary" target="_blank">View</a>
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <img src="Cisco-CyberSecurity Essential.jpg" class="card-img-down" alt="Cisco-CyberSecurity">
+                  <div class="card-body">
+                      <p class="card-text">cybersecurity-certification from cisco</p>
+                      <a href="Cisco-CyberSecurity Essential.jpg" class="btn btn-primary" target="_blank">View</a>
+                    </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <img src="Excel-Digisaksham.jpg" class="card-img-down" alt="Excel-Digisaksham">
+                  <div class="card-body">
+                      <p class="card-text">Excel course from microsoft Digisaksham</p>
+                      <a href="Excel-Digisaksham.jpg" class="btn btn-primary" target="_blank">View</a>
+                    </div>
+              </div>
+         </div>
+          <div class="col-md-4">
+            <div class="card">
+                <img src="Board Infinity- Full stack.jpg" class="card-img-down" alt="Board Infinity- Full stack">
+                <div class="card-body">
+                    <p class="card-text">Learn full stack from Board Infinity</p>
+                    <a href="Board Infinity- Full stack.jpg" class="btn btn-primary" target="_blank">View</a>
+                  </div>
+            </div>
+          </div>
+        
+           <div class="col-md-4">
+            <div class="card">
+                <img src="Microsoft.jpg" class="card-img-down" alt="Microsoft_Azure">
+                <div class="card-body">
+                    <p class="card-text">Microsoft Azure Fundamentals</p>
+                    <a href="Microsoft.jpg" class="btn btn-primary" target="_blank">View</a>
+                  </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+                <img src="GoogleDataAnalytics.jpg" class="card-img-down" alt="GoogleDataAnalytics">
+                <div class="card-body">
+                    <p class="card-text">GoogleDataAnalytics certification from coursera</p>
+                    <a href="GoogleDataAnalytics.jpg" class="btn btn-primary" target="_blank">View</a>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
 
         <!-- internships -->
         <section id="internship">
             <div class="container">
                 <h2>internships</h2>
-                <p>List your technical and non-technical internships</p>
-            </div>
+                <div class="row">
+                  <div class="col-md-4">
+                      <div class="card">
+                          <img src="nptel_internship.jpg" class="card-img-down" alt="nptel_offline_internship">
+                          <div class="card-body">
+                              <h5 class="card-title">Internship at IIT Kharagpur</h5>
+                              <p class="card-text">completed an Internship at IIT Kharagpur, In person with a duration of 6 weeks from 1stJune 2023 to 14thJuly 2023</p>
+                              <a href="nptel_internship.jpg" class="btn btn-primary" target="_blank">View</a>
+                            </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                        <img src="Internship-completed -madblocks.jpg" class="card-img-down" alt="Internship-completed -madblocks">
+                        <div class="card-body">
+                            <h5 class="card-title">Full stack using Python-Flask</h5>
+                            <p class="card-text"> Full Stack internship on python flask from 12thAugust 2022 to 12thOctober 2022 by Madblocks </p>
+                            <a href="Internship-completed -madblocks.jpg" class="btn btn-primary" target="_blank">View</a>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                      <img src="Internship-Makeskilled.jpg" class="card-img-down" alt="Internship-Makeskilled">
+                      <div class="card-body">
+                          <h5 class="card-title">MERN stack from Makeskilled</h5>
+                          <p class="card-text">Skilled oriented course on mern stack from 10th october to 14th october by Makeskilled </p>
+                          <a href="Internship-Makeskilled.jpg" class="btn btn-primary" target="_blank">View</a>
+                        </div>
+                     </div>
+                    </div>   
+                   </div>
+
+               </div>
         </section>
 
         <!-- participations -->
         <section id="participation">
             <div class="container">
                 <h2>Bootcamps & Hackthons</h2>
-                <p>List your technical and non-technical  bottcamps and hackthons</p>
+                <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                          <img src="Arduino_Bootcamp.jpg" class="card-img-down" alt="Arduino Bootcamp">
+                          <div class="card-body">
+                               <h5 class="card-title">Offline Bootcamp on IOt</h5>
+                              <p class="card-text">Bootcamp on Iot which is continuous 36 hours along with hackthon</p>
+                              <a href="Arduino_Bootcamp.jpg" class="btn btn-primary" target="_blank">View</a>
+                            </div>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                        <img src="HTML_CSS BOOTCAMP.jpg" class="card-img-down" alt="lets uograde">
+                        <div class="card-body">
+                           <h5 class="card-title">Let's Upgrade Bootcamp</h5>
+                            <p class="card-text">It was a 5 days Bootcamp on HTMl and CSS</p>
+                            <a href="HTML_CSS BOOTCAMP.jpg" class="btn btn-primary" target="_blank">View</a>
+                          </div>
+                    </div>
+                  </div>
+                </div>
             </div>
         </section>
 
@@ -547,8 +666,65 @@ body {
         <!-- extracurriculum -->
         <section id="extracurriculum ">
             <div class="container">
-                <h2>Curriculum  & Extra Curriculum activies</h2>
-                <p> Activities</p>
+                <h2>Curriculum & Extra Curriculum activies</h2>
+                <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                      <img src="Infomac input - output_page.jpg" class="card-img-down" alt="Infomac input - output_page.jpg">
+                      <div class="card-body">
+                          <p class="card-text">Infomac event from the department where ouput given and we need to find the solution:input-output </p>
+                          <a href="Infomac input - output_page.jpg" class="btn btn-primary" target="_blank">View</a>
+                        </div>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                    <img src="CSI-AutomataFix_page.jpg" class="card-img-down" alt="CSI-AutomataFix_page.jpg">
+                    <div class="card-body">
+                        <p class="card-text">CSI student chapter organized a event :AutomataFix </p>
+                        <a href="CSI-AutomataFix_page.jpg" class="btn btn-primary" target="_blank">View</a>
+                      </div>
+                </div>
+            </div>
+               <div class="col-md-4">
+                 <div class="card">
+                     <img src="E-cell EKrishi event_page.jpg" class="card-img-down" alt="E-cell EKrishi event_page.jpg">
+                     <div class="card-body">
+                         <p class="card-text">EKrishi event by Entreprenur Cell</p>
+                         <a href="E-cell EKrishi event_page.jpg" class="btn btn-primary" target="_blank">View</a>
+                       </div>
+                 </div>
+             </div>
+             <div class="col-md-4">
+               <div class="card">
+                   <img src="Hackthon_prize.jpg" class="card-img-down" alt="Hackthon_prize.jpg">
+                   <div class="card-body">
+                       <p class="card-text">Participated in the 36 hours continuous hackthon on IOt and Secured 3rd prize</p>
+                       <a href="Hackthon_prize.jpg" class="btn btn-primary" target="_blank">View</a>
+                     </div>
+               </div>
+            </div>
+           <div class="col-md-4">
+              <div class="card">
+                  <img src="ProjectExpo-prototype.jpg" class="card-img-down" alt="ProjectExpo-prototype.jpg">
+                  <div class="card-body">
+                      <p class="card-text">Participated in the ProjectExpo-prototype event organized by Innovation Club</p>
+                      <a href="ProjectExpo-prototype.jpg" class="btn btn-primary" target="_blank">View</a>
+                    </div>
+              </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card">
+                <img src="Techgig-hackthon.jpg" class="card-img-down" alt="Techgig-hackthon.jpg">
+                <div class="card-body">
+                    <p class="card-text">Participated in the Hackthon through Techgig on OneAPi hackthon</p>
+                    <a href="Techgig-hackthon.jpg" class="btn btn-primary" target="_blank">View</a>
+                  </div>
+            </div>
+        </div>
+            
+              </div>
             </div>
         </section>
 
@@ -563,8 +739,19 @@ body {
         <!-- contacts -->
         <section id="contact">
             <div class="container">
-                <h2>Contact</h2>
-                <p>Provide your contact information, including your email address and any relevant social media profiles. You may also want to include a contact form to allow visitors to reach out to you directly.</p>
+                <h2>Personal Information</h2>
+                <ul>
+                  <li>Father’s Name	:	KANTA BALASWAMY</li>
+                    <li>Mother’s Name	:	KANTA ANNAMMA</li>
+                    <li>Date of Birth	:	21/04/2003</li>
+                    <li>Gender	:	Male</li>
+                    <li>Nationality	:	Indian</li>
+                    <li>Languages Known		:	Telugu, English</li>
+                    <li>Hobbies			:	Playing Volleyball, coding</li>
+                    <li> Strength			:	Friendly nature and Excellent team leading skills,Self-learner and Eager to learn new things</li>
+                    <li>Communication Address	:	14-78, Yarrabalem Center, Mutluru(v) </li>
+                    <li>Vatticherukuru(m), Guntur, Andhrapradesh-522212</li>
+                </ul>
             </div>
         </section>
     </main>
@@ -580,7 +767,7 @@ body {
 
     <<script>
         // Add animation to social icons on hover
-        const socialIcons = document.querySelectorAll('.social-icons a');
+        const socialIcons = document.querySelectorAll('.social-icons a img');
         socialIcons.forEach(icon => {
             icon.addEventListener('mouseover', () => {
                 icon.classList.add('animate__animated', 'animate__pulse');
